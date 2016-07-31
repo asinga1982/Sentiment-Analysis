@@ -26,7 +26,6 @@ scores <- function(data, pos, neg, .progress = 'none'){
     s <- sum(pos.match) - sum(neg.match)
     return(s)
   }, pos, neg, .progress = .progress)               
-    
     score.df <- data.frame(data, score)
     return(score.df)
   
